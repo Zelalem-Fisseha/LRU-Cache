@@ -50,4 +50,9 @@ public class DoublyLinkedList<K,V> {
         Remove(node);
         return node;
     }
+    public Node<K, V> MovetoFront(Node<K,V> node) {
+        Remove(node);
+        AddToFront(node);
+        return node;
+    }
 }

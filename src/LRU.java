@@ -36,7 +36,7 @@ public class LRU<K,V> {
             return null;
         }
             Node<K,V> node=cache.get(key);
-            list.AddToFront(node);
+            list.MovetoFront(node);
 
         return node.value;
  }
